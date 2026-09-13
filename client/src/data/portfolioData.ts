@@ -10,6 +10,8 @@ import type {
   StatItem,
 } from "@/types/portfolio";
 
+const screenshot = (filename: string) => `${import.meta.env.BASE_URL}screenshots/${filename}`;
+
 export const PERSONAL_INFO = {
   name: "Prince Yvon",
   surname: "Dushimirimana",
@@ -73,10 +75,10 @@ export const AI_WORKS: AIWork[] = [
     access: "Open demo",
     tools: "Lovable AI · Google AI Studio",
     screenshots: [
-      "/screenshots/rentals_01_insights.jpg",
-      "/screenshots/rentals_02_contract_detail.jpg",
-      "/screenshots/rentals_03_contracts_list.jpg",
-      "/screenshots/rentals_04_dashboard.jpg",
+      screenshot("rentals_01_insights.jpg"),
+      screenshot("rentals_02_contract_detail.jpg"),
+      screenshot("rentals_03_contracts_list.jpg"),
+      screenshot("rentals_04_dashboard.jpg"),
     ],
   },
   {
@@ -90,10 +92,10 @@ export const AI_WORKS: AIWork[] = [
     access: "Open demo",
     tools: "Lovable AI · Google AI Studio",
     screenshots: [
-      "/screenshots/restaurant_05_transactions.jpg",
-      "/screenshots/restaurant_06_reports.jpg",
-      "/screenshots/restaurant_07_floor.jpg",
-      "/screenshots/restaurant_08_pos_pin.jpg",
+      screenshot("restaurant_05_transactions.jpg"),
+      screenshot("restaurant_06_reports.jpg"),
+      screenshot("restaurant_07_floor.jpg"),
+      screenshot("restaurant_08_pos_pin.jpg"),
     ],
   },
   {
@@ -107,10 +109,10 @@ export const AI_WORKS: AIWork[] = [
     access: "Open demo",
     tools: "Lovable AI · Google AI Studio",
     screenshots: [
-      "/screenshots/ecommerce_09_studio_dashboard.jpg",
-      "/screenshots/ecommerce_10_studio_catalogue.jpg",
-      "/screenshots/ecommerce_11_website_homepage.jpg",
-      "/screenshots/ecommerce_12_product_page.jpg",
+      screenshot("ecommerce_09_studio_dashboard.jpg"),
+      screenshot("ecommerce_10_studio_catalogue.jpg"),
+      screenshot("ecommerce_11_website_homepage.jpg"),
+      screenshot("ecommerce_12_product_page.jpg"),
     ],
   },
   {
@@ -124,10 +126,10 @@ export const AI_WORKS: AIWork[] = [
     access: "Open demo",
     tools: "Lovable AI · Google AI Studio",
     screenshots: [
-      "/screenshots/ev_13_financial_reports.jpg",
-      "/screenshots/ev_14_arrivals_queue.jpg",
-      "/screenshots/ev_15_locations_chargers.jpg",
-      "/screenshots/ev_16_charging_sessions.jpg",
+      screenshot("ev_13_financial_reports.jpg"),
+      screenshot("ev_14_arrivals_queue.jpg"),
+      screenshot("ev_15_locations_chargers.jpg"),
+      screenshot("ev_16_charging_sessions.jpg"),
     ],
   },
   {
@@ -141,8 +143,8 @@ export const AI_WORKS: AIWork[] = [
     access: "Open demo",
     tools: "Lovable AI · Google AI Studio",
     screenshots: [
-      "/screenshots/ecommerce_11_website_homepage.jpg",
-      "/screenshots/ecommerce_12_product_page.jpg",
+      screenshot("ecommerce_11_website_homepage.jpg"),
+      screenshot("ecommerce_12_product_page.jpg"),
     ],
   },
 ];
