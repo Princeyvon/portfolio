@@ -6,11 +6,13 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
+const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      {BASE_PATH && <Route path={BASE_PATH} component={Home} />}
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
