@@ -14,7 +14,7 @@ const screenshot = (filename: string) => `${import.meta.env.BASE_URL}screenshots
 
 export const PERSONAL_INFO = {
   name: "Prince Yvon",
-  surname: "Dushimirimana",
+  surname: "",
   brandText: "Prince Yvon",
   initials: "Prince Yvon",
   year: "2026",

@@ -20,8 +20,12 @@ export function HeroSection({
         <span className="eyebrow">Portfolio / 2026</span>
         <h1>
           {name}
-          <br />
-          <em>{surname}</em>
+          {surname && (
+            <>
+              <br />
+              <em>{surname}</em>
+            </>
+          )}
         </h1>
         <p className="hero-copy">{heroBio}</p>
       </Reveal>

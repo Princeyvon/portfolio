@@ -1,4 +1,4 @@
-# Prince Yvon Dushimirimana — Portfolio
+# Prince Yvon — Portfolio
 
 A deployable React 19 + Vite + Tailwind portfolio site with an editorial visual system, responsive navigation, light/dark theme switching, case-study modals, CV experience sections, AI works links, and screenshot galleries for internal operations systems.
 
