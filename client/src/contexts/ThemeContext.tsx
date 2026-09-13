@@ -19,11 +19,11 @@ interface ThemeProviderProps {
 export function ThemeProvider({
   children,
   defaultTheme = "light",
-  switchable = false,
+  switchable = true,
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    if (switchable) {
-      const stored = localStorage.getItem("theme");
+    if (switchable && typeof window !== "undefined") {
+      const stored = localStorage.getItem("yvd-theme") || localStorage.getItem("theme");
       return (stored as Theme) || defaultTheme;
     }
     return defaultTheme;
@@ -31,6 +31,7 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = document.documentElement;
+    root.dataset.theme = theme;
     if (theme === "dark") {
       root.classList.add("dark");
     } else {
@@ -38,15 +39,14 @@ export function ThemeProvider({
     }
 
     if (switchable) {
+      localStorage.setItem("yvd-theme", theme);
       localStorage.setItem("theme", theme);
     }
   }, [theme, switchable]);
 
-  const toggleTheme = switchable
-    ? () => {
-        setTheme(prev => (prev === "light" ? "dark" : "light"));
-      }
-    : undefined;
+  const toggleTheme = () => {
+    setTheme(prev => (prev === "light" ? "dark" : "light"));
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, switchable }}>
