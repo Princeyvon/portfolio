@@ -21,9 +21,8 @@ export const PERSONAL_INFO = {
   email: "pd743@georgetown.edu",
   phone: "+974 5024 2955",
   location: "Doha, Qatar",
-  academicNote: "Currently studying at Georgetown University Qatar · Class of 2027",
   heroBio:
-    "International economics student, multimedia maker, and systems-minded collaborator building practical operating software and interfaces using Lovable AI and Google AI Studio.",
+    "International economics student and multimedia maker with 5+ years across 3 countries, 3 operating environments, and 5 practical AI-powered systems built with Lovable AI and Google AI Studio.",
   heroSideNote:
     "Based in Doha. Building applied operating systems and internal tools with Lovable AI and Google AI Studio, alongside financial analysis, research, and community systems.",
 };

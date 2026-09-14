@@ -1,23 +1,18 @@
 import { useEffect, useState } from "react";
 import { SiteNav } from "@/components/portfolio/SiteNav";
 import { HeroSection } from "@/components/portfolio/HeroSection";
-import { AvailabilityBanner } from "@/components/portfolio/AvailabilityBanner";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { ExperienceSnapshotSection } from "@/components/portfolio/ExperienceSnapshotSection";
-import { TimelineSection } from "@/components/portfolio/TimelineSection";
 import { AIWorkSection } from "@/components/portfolio/AIWorkSection";
 import { SkillsSection } from "@/components/portfolio/SkillsSection";
-import { EducationSection } from "@/components/portfolio/EducationSection";
 import { FooterSection } from "@/components/portfolio/FooterSection";
 import { GalleryModal } from "@/components/portfolio/GalleryModal";
 import {
   AI_WORKS,
-  EDUCATION_DATA,
   EXPERIENCE_SNAPSHOTS,
   PERSONAL_INFO,
   SKILL_CATEGORIES,
   STATS,
-  TIMELINE_ROLES,
 } from "@/data/portfolioData";
 import type { SelectedGallery } from "@/types/portfolio";
 
@@ -51,36 +46,28 @@ export default function Home() {
           heroSideNote={PERSONAL_INFO.heroSideNote}
         />
 
-        <AvailabilityBanner note={PERSONAL_INFO.academicNote} />
-
         {/* Section 02: About / Profile */}
         <AboutSection stats={STATS} />
 
-        {/* Section 03: Experience Snapshot */}
-        <ExperienceSnapshotSection snapshots={EXPERIENCE_SNAPSHOTS} />
-
-        {/* Section 7 moved upwards right after experience snapshot */}
-        <TimelineSection roles={TIMELINE_ROLES} />
-
-        {/* Section 5 redesigned into Section 4 card layout: Systems & Demos */}
+        {/* Section 04: Systems & Demos */}
         <AIWorkSection
           aiWorks={AI_WORKS}
           onSelectGallery={(gallery) => setSelectedGallery(gallery)}
           email={PERSONAL_INFO.email}
         />
 
-        {/* Section 8: Toolkit with Lovable AI and Google AI Studio */}
-        <SkillsSection categories={SKILL_CATEGORIES} />
+        {/* Section 03: Experience Snapshot, placed before the Toolkit */}
+        <ExperienceSnapshotSection snapshots={EXPERIENCE_SNAPSHOTS} />
 
-        {/* Section 10: Education */}
-        <EducationSection education={EDUCATION_DATA} />
+        {/* Section 05: Toolkit with Lovable AI and Google AI Studio */}
+        <SkillsSection categories={SKILL_CATEGORIES} />
       </main>
 
       {/* Section 11: Contact with interactive Contact Form */}
       <FooterSection
         email={PERSONAL_INFO.email}
         phone={PERSONAL_INFO.phone}
-        fullName={`${PERSONAL_INFO.name} ${PERSONAL_INFO.surname}`}
+        fullName={PERSONAL_INFO.name}
       />
 
       {/* Demo Walkthrough Modal with Screenshots, Actual Site link, and Institutional Disclaimer */}
