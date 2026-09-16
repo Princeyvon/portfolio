@@ -27,6 +27,14 @@ export const PERSONAL_INFO = {
     "Based in Doha. Building applied operating systems and internal tools with Lovable AI and Google AI Studio, alongside financial analysis, research, and community systems.",
 };
 
+export const PERSONAL_INTERESTS = [
+  "Photography",
+  "Community systems",
+  "Visual storytelling",
+  "AI experimentation",
+  "Financial analysis",
+];
+
 export const PROJECTS: Record<string, Project> = {
   innovation: {
     eyebrow: "Systems / Support",
@@ -69,6 +77,7 @@ export const AI_WORKS: AIWork[] = [
     eyebrow: "Fleet & Bookings Ops",
     description:
       "A complete car-rental operating system for Kigali, bringing fleet availability, rental contracts, inspections, and customer records into one seamless interface.",
+    outcome: "Outcome: one operating surface for four core fleet and booking workflows.",
     href: "https://kigalirentals.lovable.app",
     status: "Institutional demo",
     access: "Open demo",
@@ -86,6 +95,7 @@ export const AI_WORKS: AIWork[] = [
     eyebrow: "Hospitality & POS Ops",
     description:
       "An internal operating system for a restaurant and cafe, shaped around live table floor plans, PIN-authenticated staff POS, transaction logs, and kitchen reporting.",
+    outcome: "Outcome: connected front-of-house, POS, transaction, and kitchen reporting in one daily workflow.",
     href: "https://ijuru.lovable.app",
     status: "Institutional demo",
     access: "Open demo",
@@ -103,6 +113,7 @@ export const AI_WORKS: AIWork[] = [
     eyebrow: "Commerce & Catalogue",
     description:
       "A high-finish ecommerce website and studio dashboard with inventory cataloguing, dynamic product display, order tracking, and clean customer journeys.",
+    outcome: "Outcome: linked catalogue, storefront, inventory, and order-tracking journeys into one commerce system.",
     href: "https://rugmosiac.lovable.app",
     status: "Live demo",
     access: "Open demo",
@@ -120,6 +131,7 @@ export const AI_WORKS: AIWork[] = [
     eyebrow: "Infrastructure & Grid Ops",
     description:
       "An internal station management platform for EV charging hubs, tracking live charger occupancy, arrivals queueing, kWh telemetry, and financial performance.",
+    outcome: "Outcome: brought four operational views—occupancy, arrivals, energy, and finance—into one station dashboard.",
     href: "https://volta10.lovable.app",
     status: "Institutional demo",
     access: "Open demo",
@@ -169,21 +181,21 @@ export const EXPERIENCE_SNAPSHOTS: ExperienceSnapshotItem[] = [
     role: "IT Facilitator",
     organization: "Georgetown Law Center",
     location: "Washington, DC",
-    details: "Support operations, WordPress, AV systems, mobile usability, AI tools",
+    details: "Support operations, WordPress, AV systems, mobile usability, AI tools · Outcome: clearer support and adoption workflows across university operations",
   },
   {
     year: "2024—25",
     role: "Community Development Assistant",
     organization: "Qatar Foundation",
     location: "Doha",
-    details: "Mentorship, workshops, conflict resolution, community programming",
+    details: "Mentorship, workshops, conflict resolution, community programming · Outcome: turned recurring community needs into practical sessions and follow-through",
   },
   {
     year: "2021—23",
     role: "Front Office Intern",
     organization: "Equity Bank Rwanda PLC",
     location: "Kigali",
-    details: "Credit analysis, risk assessments, Finacle CRM workflows",
+    details: "Credit analysis, risk assessments, Finacle CRM workflows · Outcome: made credit-file review and daily account workflows more consistent",
   },
 ];
 

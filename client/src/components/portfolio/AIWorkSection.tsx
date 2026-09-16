@@ -61,6 +61,7 @@ export function AIWorkSection({
 
               <h3>{work.title}</h3>
               <p>{work.description}</p>
+              {work.outcome && <p className="work-outcome">{work.outcome}</p>}
 
               {/* Interface screenshot preview frame */}
               {work.screenshots.length > 0 && (

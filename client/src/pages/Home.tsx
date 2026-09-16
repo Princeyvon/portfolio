@@ -10,6 +10,7 @@ import { GalleryModal } from "@/components/portfolio/GalleryModal";
 import {
   AI_WORKS,
   EXPERIENCE_SNAPSHOTS,
+  PERSONAL_INTERESTS,
   PERSONAL_INFO,
   SKILL_CATEGORIES,
   STATS,
@@ -47,7 +48,7 @@ export default function Home() {
         />
 
         {/* Section 02: About / Profile */}
-        <AboutSection stats={STATS} />
+        <AboutSection stats={STATS} interests={PERSONAL_INTERESTS} />
 
         {/* Section 04: Systems & Demos */}
         <AIWorkSection

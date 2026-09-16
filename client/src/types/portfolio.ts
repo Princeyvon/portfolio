@@ -11,6 +11,7 @@ export type AIWork = {
   type: string;
   eyebrow?: string;
   description: string;
+  outcome?: string;
   href?: string;
   status: string;
   access: string;

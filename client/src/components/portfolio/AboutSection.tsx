@@ -3,9 +3,10 @@ import { Reveal } from "./Reveal";
 
 interface AboutSectionProps {
   stats: StatItem[];
+  interests: string[];
 }
 
-export function AboutSection({ stats }: AboutSectionProps) {
+export function AboutSection({ stats, interests }: AboutSectionProps) {
   return (
     <Reveal className="content-wrap section" id="about">
       <div className="section-head">
@@ -40,6 +41,15 @@ export function AboutSection({ stats }: AboutSectionProps) {
             <span>{stat.label}</span>
           </div>
         ))}
+      </div>
+
+      <div className="interest-strip" aria-label="Personal interests">
+        <span className="eyebrow">Outside the brief</span>
+        <div className="interest-list">
+          {interests.map((interest) => (
+            <span key={interest}>{interest}</span>
+          ))}
+        </div>
       </div>
     </Reveal>
   );
